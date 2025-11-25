@@ -16,6 +16,11 @@ async function getData(cityName) {
 }
 console.log(input.value)
 button.addEventListener("click", async () => {
+    if (weatherinfo.style.display === "block") {
+            weatherinfo.style.display = "none";
+            input.value = "";
+            return;
+        }
     const value = input.value;
     const result = await getData(value);
     cityName.innerText = result.location.name
