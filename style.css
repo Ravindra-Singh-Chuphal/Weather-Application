@@ -6,9 +6,6 @@
             --card-bg: #ffffff;
             --text-main: #333;
             --text-light: #666;
-        }
-
-        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
